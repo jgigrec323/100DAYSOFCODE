@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #724be6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 450px;
+}
+
+.top {
+    display: block;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.top input {
+    display: block;
+    width: 100%;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    height: auto;
+    font-size: 1.5rem;
+    margin: 20px 2px;
+}
+
+.top input:focus {
+    outline: none;
+}
+
+.btn__submit {
+    cursor: pointer;
+    font-size: 1rem;
+    appearance: none;
+    border: none;
+    width: 70%;
+    height: 30px;
+    border-radius: 3px;
+    transition: all .2s ease;
+    background: linear-gradient(145deg, #cac9c9, #f0f0f0);
+}
+
+.btn__submit:hover,
+.btn__clear:hover {
+    transform: scale(1.05);
+}
+
+.title {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+}
+
+.bottom {
+    border-radius: 6px;
+    background: linear-gradient(145deg, #cac9c9, #f0f0f0);
+    text-align: center;
+    padding: 30px;
+}
+
+.grocery__list {
+    margin: 2rem 0 4rem 0;
+}
+
+.ini {
+    font-size: 0.8rem;
+    color: #ff0000;
+}
+
+.grocery__item {
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s linear;
+}
+
+.hide {
+    display: none;
+}
+
+.grocery__item p {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.option {
+    font-size: 1.2rem;
+}
+
+.suppr {
+    cursor: pointer;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.modif {
+    cursor: pointer;
+}
+
+.btn__clear {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    appearance: none;
+    border: none;
+    width: 84%;
+    height: 30px;
+    border-radius: 3px;
+    transition: all .2s ease;
+    background-color: #724be6;
+}

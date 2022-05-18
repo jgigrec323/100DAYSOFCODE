@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fffacd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    background-color: #483d8b;
+    border-radius: 5px;
+    width: 450px;
+    transition: all .4s ease;
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.income,
+.incomeVal {
+    appearance: none;
+    width: 100%;
+    border: none;
+    height: 35px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.check {
+    appearance: none;
+    margin-top: 35px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .4s ease;
+}
+
+.green {
+    background: #008c4f;
+}
+
+.red {
+    background: red;
+}
+
+.display {
+    font-size: .8rem;
+    font-style: italic;
+    display: block;
+    margin-top: 1.2rem;
+}
+
+.check:hover {
+    transform: scale(1.05);
+}

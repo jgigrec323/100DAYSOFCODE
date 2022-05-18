@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(216deg, #E2673F, #994D4E);
+}
+
+.container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.477);
+    height: 450px;
+    width: 650px;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.right__side {
+    padding-top: 4.5rem;
+    text-align: center;
+}
+
+.right__side input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    appearance: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: none;
+}
+
+.right__side input:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.left__side {
+    padding-top: 4rem;
+}
+
+.left__side h2 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.left__side p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.calculate {
+    appearance: none;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-top: 2rem;
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.calculate:hover {
+    transform: scale(1.05);
+}

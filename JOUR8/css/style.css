@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    background-color: #a9a9a9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.head {
+    margin-bottom: 2rem;
+}
+
+.head span {
+    display: block;
+}
+
+.date {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.state {
+    font-size: 0.8rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.tasks {
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #008080;
+    transition: all .4s ease;
+    box-shadow: 3px 4px 5px #0000003e;
+}
+
+.todolist {
+    display: block;
+}
+
+.task {
+    display: flex;
+    margin: 15px 50px;
+    position: relative;
+    transition: all .5s ease;
+}
+
+.deleted::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    height: 1px;
+    top: 10px;
+}
+
+.content input {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions {
+    margin-left: 10px;
+}
+
+.edit {
+    margin-right: 1.5rem;
+}
+
+.edit,
+.delete {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add__input {
+    appearance: none;
+    border: none;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #008080;
+    transition: all .4s ease;
+    box-shadow: 3px 4px 5px #0000003e;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.add__input::placeholder {
+    color: #ccc;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all .4s ease;
+    bottom: -8rem;
+    right: 1rem;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background: #008080;
+    cursor: pointer;
+    box-shadow: 3px 4px 5px #0000008b;
+}
+
+.mdi {
+    transition: all .4s ease;
+}
+
+.add span {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.add:hover {
+    transform: scale(1.05);
+}
+
+.rotate {
+    transform: rotate(-30deg);
+}

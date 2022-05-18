@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex__container {
+    text-align: center;
+}
+
+textarea {
+    text-align: center;
+}
+
+.hex__code {
+    display: block;
+    color: #ffffff;
+    background-color: inherit;
+    margin: 0 0 4rem 0;
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.hex__code:hover {
+    transform: translate(-5px, 5px) scale(1.5);
+}
+
+.copy {
+    color: #fff;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.clickMe {
+    background-color: #ccc;
+    padding: 1rem;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5 ease-in-out;
+    border-radius: 2px;
+}
+
+.clickMe:hover {
+    background-color: #fff;
+}

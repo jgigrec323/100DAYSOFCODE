@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Digital Calculator-DAY6</title>
+</head>
+
+<body>
+    <div onmousedown="return false" onselectstart="return false" class="container">
+        <div class="top black">
+            <input type="text" value="0" class="operation">
+            <input type="text" class="resultat">
+        </div>
+        <div class="bottom white">
+            <div class="option__row">
+                <input type="text" readonly="readOnly" class="C" value="C">
+                <input type="text" readonly="readOnly" class="option plusMinus" value="+/-">
+                <input type="text" readonly="readOnly" class="option percent" value="%">
+                <input type="text" readonly="readOnly" class="option divide" value="&divide;">
+            </div>
+            <div class="option__row">
+                <input type="text" readonly="readOnly" class="nombres" value="7">
+                <input type="text" readonly="readOnly" class="nombres" value="8">
+                <input type="text" readonly="readOnly" class="nombres" value="9">
+                <input type="text" readonly="readOnly" class="option times" value="&times;">
+            </div>
+            <div class="option__row">
+                <input type="text" readonly="readOnly" class="nombres" value="4">
+                <input type="text" readonly="readOnly" class="nombres" value="5">
+                <input type="text" readonly="readOnly" class="nombres" value="6">
+                <input type="text" readonly="readOnly" class="option minus" value="&minus;">
+            </div>
+            <div class="option__row">
+                <input type="text" readonly="readOnly" class="nombres" value="1">
+                <input type="text" readonly="readOnly" class="nombres" value="2">
+                <input type="text" readonly="readOnly" class="nombres" value="3">
+                <input type="text" readonly="readOnly" class="option plus" value="&plus;">
+            </div>
+            <div class="option__row">
+                <input type="text" readonly="readOnly" class="nombres" value="0">
+                <input type="text" readonly="readOnly" class="nombres point" value=".">
+                <input type="text" readonly="readOnly" class="option equals" value="&equals;">
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

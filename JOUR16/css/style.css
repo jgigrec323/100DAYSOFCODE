@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d9f356;
+    position: relative;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 24px;
+    padding: 24px;
+}
+
+.note {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.addBtn {
+    position: absolute;
+    background-color: #fff;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding-top: 17px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 7px black;
+    transition: all .4s ease;
+}
+
+.addBtn:hover {
+    transform: scale(1.05);
+}

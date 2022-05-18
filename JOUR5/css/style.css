@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe4c4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    font-weight: 900;
+}
+
+.option__container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.option__container div {
+    margin: 0.8rem;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+input:checked {
+    border: 6px solid #0bd36f;
+}
+
+.unit__container {
+    display: flex;
+}
+
+.unit__container select {
+    border: none;
+    border-bottom: 2px solid #0bd36f;
+    height: 35px;
+    border-radius: 2px;
+}
+
+.unit__from,
+.unit__to {
+    margin: 0.8rem;
+}
+
+.unit__from {
+    text-align: left;
+}
+
+.unit__to {
+    text-align: right;
+}
+
+
+/* .masse {
+    display: none;
+} */
+
+div.value {
+    margin-top: 1rem;
+}
+
+div.value input {
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #0bd36f;
+}

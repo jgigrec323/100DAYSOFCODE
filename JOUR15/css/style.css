@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(189deg, #9E5CFD9a, #ba47a992), url("../img/bg-event.jpg");
+    background-size: cover;
+}
+
+.container,
+.formulaire {
+    text-align: center;
+    color: #000;
+}
+
+.informations {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.informations h2 {
+    font-size: 2.5rem;
+}
+
+.yellow {
+    color: rgb(170, 255, 0);
+}
+
+.dateLieu {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.timeCount h1 {
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+    color: rgb(170, 255, 0);
+}
+
+.units {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulaire input {
+    outline: none;
+    height: 40px;
+    padding: 2px 10px;
+    background-color: transparent;
+    border: 1px solid #620354;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.formulaire input::placeholder {
+    color: #fff;
+}
+
+.formulaire p {
+    margin-top: 2rem;
+    font-size: .8rem;
+    color: #620354;
+}
+
+
+/* .units span:not(:last-child) {
+    margin-right: 5rem;
+} */

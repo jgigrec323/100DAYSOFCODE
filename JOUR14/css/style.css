@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9967a;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container span {
+    font-size: 2.3rem;
+    color: indigo;
+    cursor: pointer;
+}
+
+.counter {
+    margin: 0 2rem;
+    background-color: indigo;
+    color: #fff;
+    text-align: center;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.counter h2 {
+    font-size: 5rem;
+}
+
+.clicked {
+    animation-name: moveup;
+    animation-duration: .2s;
+}
+
+@keyframes moveup {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+.options {
+    display: flex;
+    position: absolute;
+    bottom: -65px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container p {
+    position: absolute;
+    bottom: -100px;
+    font-size: 1rem;
+    left: 100px;
+    color: indigo;
+    transition: all .4s ease;
+    opacity: 0;
+    animation-name: apparaitre;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes apparaitre {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.options div:not(:last-child) {
+    margin-right: 30px;
+}
+
+.options div label {
+    font-size: 1.2rem;
+    color: indigo;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+input[type="radio"] {
+    height: 17px;
+    width: 17px;
+    appearance: none;
+    border: 2px solid indigo;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-color: indigo;
+}

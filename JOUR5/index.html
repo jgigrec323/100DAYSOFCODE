@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Unit Converter-DAY5</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Unit Converter</h2>
+        <div class="option__container">
+            <div>
+                <input type="radio" name="option" id="lenght__option">
+                <label for="lenght__option">Lenght</label>
+            </div>
+            <div>
+                <input type="radio" name="option" id="mass__option">
+                <label for="mass__option">Mass</label>
+            </div>
+        </div>
+
+        <div class="unit__container">
+            <div class="unit__from longueur">
+                <label for="units-from">From</label>
+                <select name="units" id="units-from">
+                    <option value="">--Choose an unit--</option>
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                    <option value="hm">hm</option>
+                    <option value="dam">dam</option>
+                    <option value="dm">dm</option>
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                </select>
+                <div class="value">
+                    <input type="text">
+                </div>
+
+            </div>
+            <div class="unit__from masse">
+                <label for="units-from">From</label>
+                <select name="units" id="units-from-kg">
+                    <option value="">--Choose an unit--</option>
+                    <option value="g">g</option>
+                    <option value="kg">kg</option>
+                    <option value="hg">hg</option>
+                    <option value="dag">dag</option>
+                    <option value="dg">dg</option>
+                    <option value="cg">cg</option>
+                    <option value="mg">mg</option>
+                </select>
+                <div class="value">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="unit__to longueur">
+                <label for="units-to">To</label>
+                <select name="units" id="units-to">
+                    <option value="">--Choose an unit--</option>
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                    <option value="hm">hm</option>
+                    <option value="dam">dam</option>
+                    <option value="dm">dm</option>
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                </select>
+                <div class="value">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="unit__to masse">
+                <label for="units-to">To</label>
+                <select name="units" id="units-to-kg">
+                    <option value="">--Choose an unit--</option>
+                    <option value="g">g</option>
+                    <option value="kg">kg</option>
+                    <option value="hg">hg</option>
+                    <option value="dag">dag</option>
+                    <option value="dg">dg</option>
+                    <option value="cg">cg</option>
+                    <option value="mg">mg</option>
+                </select>
+                <div class="value">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <!-- <button class="convert">Convert</button> -->
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
