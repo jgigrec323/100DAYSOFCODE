@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shopping cart - DAY56</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="header">
+                <h3>Shopping Cart</h3>
+                <span class="totalItems">3 Items</span>
+                <div class="line"></div>
+            </div>
+            <table id="productsTable">
+                <thead>
+                    <tr>
+                        <th>Product details</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td class="productDetails">
+                            <img src="img/ps4.jpg" alt="ps4">
+                            <div>
+                                <h5 class="productTitle">PS4 pro</h5>
+                                <p class="productMoreInfo">Limited Edition</p>
+
+                                <button>Remove</button>
+                            </div>
+                        </td>
+                        <td class="productNbre">
+                            <span>&minus;</span>
+                            <input type="text" class="quantity" value="1">
+                            <span>&plus;</span>
+                        </td>
+                        <td class="singlePrice">$350</td>
+                        <td class="totalPrice">$350</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <a class="back" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> Continue shopping</a>
+        </div>
+        <div class="right">
+            <div class="header">
+                <h3>Order Summary</h3>
+                <div class="line"></div>
+            </div>
+            <div class="orderSum">
+                <div class="sumInfos">
+                    <span class="itemsTotal">Items 3</span>
+                    <span class="totalAmount">$350</span>
+                </div>
+
+                <div class="shippingInfos">
+                    <h6>Shipping</h6>
+                    <select name="shippingInfos" id="shippingInfos">
+                        <option value="3.99">Standard Delivery - $3.99</option>
+                        <option value="9.99">Express Delivery - $9.99</option>
+                    </select>
+                </div>
+
+                <div class="promoInfo">
+                    <h6>Promo Code</h6>
+                    <input type="text" placeholder="Enter code here">
+                    <button>Apply</button>
+                </div>
+
+                <div class="line"></div>
+                <div class="finalInfo">
+                    <span>Total Cost</span>
+                    <span id="totalCost"></span>
+                    <button>Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

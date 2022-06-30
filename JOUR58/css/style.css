@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Secular One', sans-serif;
+    background-color: gold;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.scoreBox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.playerScore,
+.computerScore {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.moves {
+    margin-bottom: 2rem;
+}
+
+.moves h4 {
+    font-size: 1.7rem;
+}
+
+.movesLeft {
+    font-size: 1.3rem;
+}
+
+.playerOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playerOptions div {
+    width: 80px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.playerOptions img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.playerOptions img:hover {
+    transform: scale(1.1)
+}
+
+.displayResult {
+    margin-top: 1rem;
+}
+
+.end {
+    background-color: #000;
+    color: gold;
+    padding: 2px;
+}
+
+.displayChoices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    color: gold;
+    background-color: #000;
+    padding: 5px;
+}
