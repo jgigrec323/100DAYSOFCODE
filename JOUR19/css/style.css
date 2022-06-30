@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Luckiest Guy', sans-serif;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #8403f5;
+    height: 10vh;
+    padding: 40px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+}
+
+.links li {
+    margin: 10px 2rem;
+}
+
+.links li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.active::after {
+    content: "_";
+    background-color: white;
+    font-size: 5px;
+    display: block;
+}
+
+.main {
+    position: relative;
+    height: 90vh;
+    background-color: #ebebeb;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 75%;
+    font-size: 10rem;
+    background-color: #fff;
+    border-radius: .4rem;
+}
+
+.equation h2 {
+    margin: 0 5rem;
+}
+
+.num1 {
+    color: #8403f5;
+}
+
+.num2 {
+    color: #f5dd03;
+}
+
+.signe {
+    color: #f5033f;
+}
+
+.equal {
+    margin-right: 2rem;
+    color: #8403f5;
+}
+
+.interrogation {
+    color: #f5033f;
+    font-size: 16rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin-left: 15px;
+    font-size: 7rem;
+    color: #fff;
+}
+
+.options h2:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.opt1 {
+    text-align: center;
+    background-color: #8403f5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.opt2 {
+    text-align: center;
+    background-color: #f5033f;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.opt3 {
+    text-align: center;
+    background-color: #f5dd03;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.opt1:hover {
+    color: #8403f5;
+    background-color: #fff;
+}
+
+.opt2:hover:hover {
+    color: #f5033f;
+    background-color: #fff;
+}
+
+.opt3:hover {
+    color: #f5dd03;
+    background-color: #fff;
+}
+
+.score {
+    position: absolute;
+    font-size: 2rem;
+    top: 50px;
+    left: 30px;
+    color: #f5dd03;
+}

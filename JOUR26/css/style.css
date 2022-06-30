@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffc0cb;
+}
+
+.home-container {
+    text-align: center;
+    width: 250px;
+}
+
+.home-container h1 {
+    color: #fd3657;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+a {
+    border-radius: 7px;
+}
+
+.home-container a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ff7d92;
+    box-shadow: 1px 1px 5px #fd3657;
+    transition: all .4s ease;
+    animation: to-top;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+}
+
+.home-container a:hover {
+    transform: translate(5px, 2px);
+}
+
+.play {
+    margin-bottom: 1.5rem;
+}
+
+.game-container {
+    padding: 2rem 5rem;
+    background-color: #ffffff93;
+    width: 45vw;
+}
+
+.game-container .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.evolution {
+    text-align: center;
+    width: 15vw;
+}
+
+.evolution-progress {
+    position: relative;
+    margin-top: .4rem;
+    border: 2px solid #ff7d92;
+    height: 25px;
+}
+
+.progresser {
+    position: absolute;
+    left: 0;
+    width: 10%;
+    background-color: #ff7d92;
+    height: 100%;
+    transition: all .4s ease;
+}
+
+.score {
+    text-align: center;
+}
+
+.score span {
+    color: #ff7d92;
+    font-weight: bold;
+    font-size: 2.5rem;
+    transition: all .4s ease;
+}
+
+.question {
+    margin-bottom: 2.5rem;
+    animation: questiond;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    height: 70px;
+}
+
+.answers-options div {
+    border-bottom: 2px solid #ff7d92;
+    margin-bottom: 1.5rem;
+    height: 30px;
+    display: flex;
+    transition: all .3s ease;
+    cursor: pointer;
+    animation: to-top;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.answers-options div:hover {
+    transform: translate(5px, 2px);
+}
+
+.answers-picker {
+    position: relative;
+    background-color: #ff7d92;
+    height: 100%;
+    width: 35px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.answer {
+    padding-top: 5px;
+    padding-left: 8px;
+}
+
+.end-container {
+    text-align: center;
+}
+
+.end-container h2 {
+    margin-bottom: 2rem;
+    color: #fd3657;
+    font-size: 3rem;
+}
+
+.end-container input {
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 2px solid #ff7d92;
+    margin-bottom: 3rem;
+    height: 30px;
+}
+
+.end-container a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ff7d92;
+    box-shadow: 1px 1px 5px #fd3657;
+    transition: all .4s ease;
+    margin-bottom: 1rem;
+    animation: to-top;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+}
+
+.end-container a:hover {
+    transform: translate(5px, 2px);
+}
+
+.hs-container h1 {
+    color: #fd3657;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.score-element {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.hs-container a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ff7d92;
+    box-shadow: 1px 1px 5px #fd3657;
+    transition: all .4s ease;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.hs-container a:hover {
+    transform: translate(5px, 2px);
+}
+
+.hisScore {
+    color: #fd3657;
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes questiond {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
