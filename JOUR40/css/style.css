@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121261;
+    color: #fff;
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Gbottom {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.bottom {
+    display: flex;
+    background-color: #fff;
+    color: #000;
+}
+
+.left div label {
+    display: block;
+    font-size: .8rem;
+}
+
+.left div input {
+    height: 34px;
+    margin: 10px 0;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.bottom>div:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.right p {
+    font-size: .8rem;
+}
+
+textarea {
+    margin-top: 10px;
+    appearance: none;
+    outline: none;
+    border: 1px solid black;
+    height: 84%;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+input {
+    padding: 3px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.services span {
+    color: #000;
+    width: auto;
+    font-size: .8rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all .4s ease;
+    padding: 2px;
+}
+
+.services span:hover {
+    background-color: palevioletred;
+    color: #fff;
+}
+
+h5 {
+    color: #000;
+    margin-top: 2rem;
+}
+
+button {
+    padding: 5px;
+    margin-left: 29%;
+    background-color: palevioletred;
+    color: #fff;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, rgba(50, 70, 80, 0.7), rgba(30, 20, 150, 0.7)), url('../img/bg.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #1f1496d4;
+    width: 85vw;
+    height: 80vh;
+    padding: 5rem;
+    color: #fff;
+    position: relative;
+}
+
+.container::before {
+    content: '\201C';
+    position: absolute;
+    top: -140px;
+    left: 100px;
+    font-size: 40rem;
+    font-family: sans-serif;
+    opacity: .5;
+}
+
+.left {
+    width: 200px;
+}
+
+.right {
+    transform: translateX(150px);
+}
+
+.title {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.connect {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.connect i {
+    background-color: #fff;
+    color: red;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 3px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.review {
+    width: 480px !important;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.review-top {
+    width: auto;
+    height: 320px;
+}
+
+.review-bottom {
+    height: 200px;
+    color: #000;
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.review-top img {
+    height: 100%;
+    width: 100%;
+}
+
+.message {
+    position: relative;
+}
+
+.message::before {
+    content: '\201C';
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    font-size: 100px;
+    font-family: sans-serif;
+    opacity: .5;
+    color: #a3a2a2;
+}
+
+.nom {
+    margin-top: 1.5rem;
+}
+
+.title-personnel {
+    color: #a3a2a2;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.btns {
+    background-color: #a3a2a2;
+    display: inline-block;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.btns i {
+    color: rgba(30, 20, 150, 0.7);
+}

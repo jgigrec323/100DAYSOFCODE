@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.exit-intent-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(33, 33, 33, 0.8);
+    transform: translateY(60%) scale(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.exit-intent-popup.visible {
+    transform: translateY(0) scale(1);
+}
+
+.newsletter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input,
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    height: 30px;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* Popup-specific styles */
+
+.newsletter {
+    background: #e8d316;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+}

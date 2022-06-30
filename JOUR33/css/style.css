@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-color: #1a1b35;
+}
+
+a {
+    text-decoration: none;
+    color: #1a1b35;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    position: absolute;
+    padding: 30px 25px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    background-color: #ffffffd0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+
+.logo {
+    color: #1a1b35;
+}
+
+.logo h1 {
+    display: none;
+}
+
+.settings li:not(:last-child),
+.links li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.settings i,
+.links i {
+    transition: all .4s ease;
+}
+
+.settings i:hover,
+.links i:hover {
+    color: #d9d928;
+}
+
+.settings i,
+.links i {
+    margin-right: 15px;
+    color: #1a1b35;
+}
+
+li {
+    cursor: pointer;
+}
+
+li a {
+    display: none;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+.burger div {
+    background-color: #1a1b35;
+    width: 30px;
+    height: 6px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.affic {
+    display: inline-block;
+}

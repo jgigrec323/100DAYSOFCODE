@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg');
+    background-size: cover;
+    /*ajout du parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.cta {
+    width: 420px;
+    position: absolute;
+    top: 50%;
+    left: 30.5%;
+    transform: translate(-50%, -50%);
+}
+
+.cta h2 {
+    color: #fff;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.btn {
+    width: 200px;
+    padding: 1rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #c886a7;
+    animation: topup 1s ease infinite;
+}
+
+.main {
+    background-color: #f1f1f1;
+    padding-top: 5rem;
+    padding: 5rem 20rem;
+}
+
+.new {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.title {
+    margin-bottom: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: 500;
+    color: #c886a7;
+    display: inline-block;
+    position: relative;
+    font-size: 2rem !important;
+}
+
+.new-cards {
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 40px;
+    justify-items: center;
+}
+
+.new-cards-item {
+    width: 320px;
+}
+
+.top img {
+    width: 100%;
+}
+
+.nom {
+    margin-top: 1rem;
+}
+
+.btn-buy {
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: #c886a7;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: all .4s ease;
+}
+
+.btn-buy:hover {
+    background-color: transparent;
+    color: #c886a7;
+    border: 1px solid #000;
+}
+
+.featured {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.featured-card {
+    display: flex;
+    align-items: center;
+}
+
+.f-left {
+    text-align: start;
+}
+
+.featured-t1 {
+    font-size: 6rem;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+}
+
+.featured-t2 {
+    font-size: 4rem;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    color: #c886a7;
+    margin-top: -3rem;
+    margin-left: 11.6rem;
+    position: relative;
+    z-index: 4;
+}
+
+.f-left p {
+    margin-top: 3rem;
+    padding-right: 3rem;
+}
+
+.blog-container {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+
+.blogItem {
+    width: 550px;
+    height: 600px;
+    box-shadow: 0px 1px 5px #00000064;
+}
+
+.blogItem:not(:last-child) {
+    margin-right: 10rem;
+}
+
+.blogTop img {
+    width: 100%;
+}
+
+.blogText {
+    text-align: justify;
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 0px 2rem;
+}
+
+.date {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    font-style: italic;
+    padding: 0px 2rem;
+}
+
+.blogcta {
+    margin-top: 7rem;
+    width: 200px;
+}
+
+.newsletter-container {
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 1.7rem;
+}
+
+.news {
+    margin-bottom: 2rem;
+}
+
+.newsletter-container p {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.operations input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #000;
+    height: 50px;
+    width: 400px;
+    padding: .5rem;
+}
+
+.operations button {
+    height: 50px;
+}
+
+.footer a,
+footer i {
+    color: #000;
+}
+
+.footer {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    font-size: 1.8rem;
+    padding: 13rem 20rem;
+    background-color: #f1f1f1;
+}
+
+.footer i {
+    opacity: .8;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.footer i:hover {
+    color: #c886a7;
+}
+
+.footer .title {
+    margin-bottom: 2rem;
+}
+
+.first p,
+.second .contacts {
+    opacity: .8;
+    font-size: 1.5rem;
+}
+
+.follow-box {
+    margin-top: 4rem;
+    font-size: 4rem;
+}
+
+.follow-box a:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.contacts li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.contacts li i {
+    margin-right: 1rem;
+}
+
+.pay-box {
+    margin-top: 10.8rem;
+    font-size: 4rem;
+}
+
+.pay-box i:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.third>* {
+    display: block;
+}
+
+.third input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #000;
+    height: 50px;
+    width: 100%;
+    padding: .5rem;
+}
+
+.third input:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.third textarea {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #000;
+    width: 100%;
+    padding: .5rem;
+}
+
+.copyright {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #c886a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem auto;
+    height: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #c886a7;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+@keyframes topup {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 2px 1px 10px #00000064;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
