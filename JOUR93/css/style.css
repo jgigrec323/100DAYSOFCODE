@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: #f12711;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+h1 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+}
+
+.word {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.guessInput {
+    outline: none;
+    border: none;
+    background: none;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    width: 400px;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    padding: 4px;
+}
+
+.guessInput::placeholder {
+    color: #000;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    color: #fff;
+    background: #f12711;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.score {
+    position: absolute;
+    top: 100px;
+    background-color: #ffffff99;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.badge {
+    width: 300px;
+    text-align: center;
+    padding: .8rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+}
+
+.correct {
+    animation: topbot .2s ease;
+    background-color: #6efb28;
+}
+
+.incorrect {
+    animation: topbot .2s ease;
+    background-color: #f12711;
+}
+
+@keyframes topbot {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

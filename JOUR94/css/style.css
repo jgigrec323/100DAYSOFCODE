@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: dodgerblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    display: none;
+    font-size: 3rem;
+}
+
+.space {
+    display: inline-block;
+    min-width: 15px;
+}
+
+.searchOptions input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+
+.searchOptions i {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.displayResult {
+    margin-top: 2rem;
+}
+
+.wordOpt {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.wordOpt i {
+    cursor: pointer;
+}
+
+.singleDef {
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.type {
+    display: inline;
+    text-transform: capitalize;
+}
+
+.synonyms {
+    margin-top: .5rem;
+}
+
+.definition {
+    font-weight: bold;
+}
+
+.loader {
+    display: none;
+}

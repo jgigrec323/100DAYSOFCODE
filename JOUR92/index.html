@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Book Finder - DAY92</title>
+</head>
+
+<body id="main">
+    <div class="booktit"><b>Book Finder</b></div>
+    <div class="frm">
+        <input type="search" class="form-control" id="query" placeholder="Search for Books" autocomplete="off" autofocus>
+        <input type="button" class="btn btn-success srcBtn" value="Search" name="btn" onclick="queryBooks()">
+    </div>
+    <div class="results" id="res">
+        <!-- <div class="card col-md-6" style="width: 32rem;" id="results"></div> -->
+        <div id="query-display"></div>
+        <div class="loader" id="load"></div>
+    </div>
+</body>
+<script>
+    var loader = document.getElementById("load");
+    loader.setAttribute('style', 'display: none;');
+    document.getElementById("query").onkeypress = function(event) {
+        if (event.keyCode == 13 || event.which == 13) {
+            queryBooks();
+        }
+    };
+</script>
+
+</html>

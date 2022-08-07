@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dictionnary App - DAY94</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dictionnary App</h1>
+        <div class="searchOptions">
+            <input type="text" placeholder="Search a word">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <img class="loader" src="img/74H8.gif" alt="">
+        <div class="displayResult">
+            <div class="wordOpt">
+
+                <span class="word"></span>
+                <i class="fa fa-volume-up" onclick="audio.play()" aria-hidden="true"></i>
+                <audio src=""></audio>
+            </div>
+            <div class="definitions">
+
+            </div>
+            <!-- <div class="singleDef">
+                <span class="order">1</span>
+                <p class="type">dfdf</p>
+                <p class="definition">dfdf</p>
+            </div> -->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
