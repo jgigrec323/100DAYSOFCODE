@@ -1,0 +1,11 @@
+{
+    "name": "Programming Quotes",
+    "version": "1.0.0",
+    "description": "Random Programming Quotes",
+    "manifest_version": 3,
+    "author": "jgigrec323",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Programming Quotes"
+    }
+}

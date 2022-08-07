@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business cards collector - DAY69</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            BUSINESS CARD COLLECTOR</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="title">Company name</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Location</label>
+                <input type="text" id="location" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">Phone number</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <input type="submit" id="sub" onclick="" value="Add Card" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Company name</th>
+                    <th>Location</th>
+                    <th>Phone number</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

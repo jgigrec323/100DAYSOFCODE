@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Budget Tracker App - DAY 71</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Budget App</h1>
+        <div class="header">
+            <div class="row">
+                <div class="budget">
+                    <h3>Budget</h3>
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <span class="budgetAmount green">$1000</span>
+                </div>
+                <div class="expenses">
+                    <h3>Expenses</h3>
+                    <i class="fa-solid fa-sheet-plastic"></i>
+                    <span class="expenseAmount red">$0</span>
+                </div>
+                <div class="balance">
+                    <h3>Balance</h3>
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span class="balanceAmount green">$1000</span>
+                </div>
+            </div>
+        </div>
+        <div class="addForm">
+            <input type="text" id="expenseName" placeholder="Enter your expense">
+            <input type="number" name="expenseAmount" id="expenseAmount" placeholder="Expense Amount">
+            <button class="btnAdd">&plus;</button>
+        </div>
+
+        <ul class="expensesList">
+            <!--  <li>
+                <span class="expenseNom">Nom de l'expense</span>
+                <span class="expensePrix">$45</span>
+                <div class="options">
+                    <i class="fa fa-trash red" aria-hidden="true"></i>
+                    <i class="fa fa-edit green" aria-hidden="true"></i>
+                </div>
+            </li> -->
+
+
+        </ul>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
